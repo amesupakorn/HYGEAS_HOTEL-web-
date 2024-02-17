@@ -1,0 +1,120 @@
+/* checkin.css */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: rgb(75, 110, 240);
+  color: #fff;
+  padding: 20px;
+  height: 25px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  padding: 15px 23px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
+  background-color: #d5d5d5;
+  color: #000000;
+}
+
+td {
+  padding: 15px 23px;
+  background-color: #f3f3f3;
+  color: #000000;
+  border-bottom: 1px solid #fbfbfb;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+button {
+  background-color: #987a58;
+  color: #eeeaea;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 20%;
+  height: 15%;
+}
+
+.popup:target {
+  display: flex;
+}
+
+/* .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+} */
+/* CSS สำหรับลบที่ขีดเส้นใต้ไอคอนของปุ่ม */
+/* table a {
+  text-decoration: none; /* ลบที่ขีดเส้นใต้ 
+} */
+/* CSS สำหรับลบเส้นใต้ตรงที่อักขระ "❌" ในปุ่มปิด pop-up */
+/* .close-button a {
+  text-decoration: none; /* ลบเส้นใต้ 
+} */
+
+.close {
+  position: absolute;
+  top: 335px;
+  right: 575px;
+  transition: all 100ms;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #828282;
+  z-index: 3;
+}
+
+.close:hover {
+  color: #000000;
+}
