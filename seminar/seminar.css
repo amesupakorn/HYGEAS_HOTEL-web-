@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alice", serif;
+}
+
+
+
+html,body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Alice", serif;
+  font-size: 50%;
+  font-size: 10px;
+  background-color: #021b24;
+}
+
+.nav {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  line-height: 65px;
+  text-align: center;
+}
+
+.nav div.logo {
+  float: left;
+  width: auto;
+  height: auto;
+  padding-left: 4rem;
+}
+
+.nav div.logo a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.nav div.logo a:hover {
+  color: #ffffff;
+}
+
+.nav div.main_list {
+  height: 65px;
+  float: right;
+}
+
+.nav div.main_list ul {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav div.main_list ul li {
+  width: auto;
+  height: 65px;
+  font-weight: 500; 
+  padding: 0;
+  padding-right: 5rem;
+}
+
+.nav div.main_list ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 65px;
+  font-size: 2rem;
+
+}
+.nav div.main_list ul li a:hover{
+  color: #000000;
+  border-bottom: 1.5px solid rgb(0, 0, 0);
+  right: 100%; 
+}
+
+/* sign in */
+
+.nav li:last-child a {
+  background-color:#021b24;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: #fff;
+  box-shadow: 0px 15px 13px -10px rgba(0, 0, 0,0.2);
+  transition: all 0.4s;
+}
+
+.nav li:last-child a:hover {
+  background: rgba(241, 241, 241, 0.5);
+}
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+.affix {
+  padding: 0;
+  background-color: #987a58;
+}
+
+
+
+
+/* head */
+
+.head{
+  width: 100%;
+  height: 70vh;
+  
+  background-position: center top;
+  background-size:cover;
+}
+
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 96%;
+  background-position: center;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+
+  background-size: cover;
+  image-rendering: optimizeQuality;
+}
+
+.image {
+  opacity: 80%;
+  width: 100%;
+  object-fit: cover;
+
+  height: 100%;
+}
+
+
+.title {
+  position: relative;
+  font-style: normal;
+  font-size: 70px;
+  color: #fff;
+  font-family: "Alice", serif;
+  margin-top: 20%;
+  left: 25%;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.text {
+  margin-top: 1%;
+  position: relative;
+  font-style: normal;
+  font-size: 20px;
+  left: 36%;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-family: "Alice", serif;
+  z-index: 10;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 44%;
+  border: 2px solid #e1e1e1;
+    font: 12px/1.2 "Alice", serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+    transition: color 0.1s linear 0.05s;
+}
+.btn::before {
+  content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e1e1e1;
+    z-index: 1;
+    opacity: 0;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+.btn::after {
+  transition: border 0.1s linear 0.05s;
+}
+.btn .btn-inner {
+  margin-top: 50%;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+}
+.btn:hover {
+  color: #373737;
+  transition: color 0.1s linear 0s;
+}
+.btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+.btn:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
+}
+
+main {
+  position: relative;
+  left: 3%;
+  width: 100%;
+  height: 100vh;
+  background-position: center top;
+  background-size:cover;
+  top: 10%;
+  column-gap: 3rem;
+  background-color: #021b24;
+  
+  z-index: 0;
+}
+
+main > div h1 {
+  text-transform: capitalize;
+  position: relative;
+  left: 30px;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  background-color: #fffcfc;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p{
+  color: #ffffff;
+}
+
+main > div hr {
+  position: relative;
+  left: 30px;
+  display: block;
+  background: #ffffff;
+  height: 0.25rem;
+  width: 10rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+main > div p {
+  line-height: 1.6;
+  font-size: 18px;
+  position: relative;
+  left: 30px;
+}
+
+main > div h5{
+  color: #fff;
+  position: relative;
+  font-size: 25px;
+  top: 55px;
+  left: 130px;
+}
+
+main > div h6{
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  top: 40px;
+  left: 320px;
+}
+
+.swiper {
+  position: relative;
+  left: -2%;
+  width: 60%;
+  padding-top: 3.125rem;
+}
+
+.swiper-pagination-bullet, 
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 30rem;
+  height: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {
+  color: #005baa;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/VIE-HOTEL-30_09_2020-Class-Room-5-0254-Main_s-1-1500x690.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/VIE-HOTEL-30_09_2020-Class-Room-10-0487-Main_s-1.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/seminar3.webp") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/seminar2.webp") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("image/seminar3.webp") no-repeat 50% 50%/cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg,
+.bg2 {
+    opacity: 0.1;
+  }
+}
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+}
+.custom-properties-ftw {
+  position: relative;
+  padding: 2.5rem 1.5rem;
+  background-color: #00171f;
+  z-index: 10;
+}
+.custom-properties-ftw .head-small {
+  margin-bottom: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  text-align: center;
+}
+
+/* popup */
+
+.overlay {
+  position: absolute;
+  top: 2.5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  z-index: 10;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.title2 {
+	font-size: 24px;
+	line-height: 50px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000000;
+}
+
+.popup {
+  margin: 75px auto;
+  padding: 20px;
+  background-color: #ffffffde;
+  border: 1px solid #666;
+  width: 200px;
+  height: 280px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 40%;
+  z-index: 10;
+}
+.light .popup {
+  border-color: #aaa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.popup h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #666;
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+.popup p {
+  position: absolute;
+  left: 90%;
+  top: 2%;
+  font-size: 35px;
+  color: #666;
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  opacity: 0.8;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
+.popup .close:hover {
+  opacity: 1;
+}
+.popup .content {
+  top: 40%;
+}
+.popup p {
+  margin: 0 0 1em;
+}
+.popup p:last-child {
+  margin: 0;
+}
+
+.profile {
+  display: inline-block;
+  padding: 8px 25px;
+  color: #021b24;
+  text-decoration: none;
+  position: relative;
+  top: 10%;
+  left: -15%;
+  background: transparent;
+  font: 12px "Alice", serif;
+  letter-spacing: 0.3em;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 12px 35px;
+  color: #021b24;
+  text-decoration: none;
+  position: absolute;
+  left: 8%;
+  top: 80%;
+  background: transparent;
+  border: 1.2px solid #021b24;
+  font: 12px/1.2 "Alice", serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+}
+.btn2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e1e1e1;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+.btn2::after {
+  transition: border 0.1s linear 0.05s;
+}
+.btn2 .btn-inner {
+  position: relative;
+  z-index: 2;
+}
+.btn2:hover {
+  color: #373737;
+  transition: color 0.1s linear 0s;
+}
+.btn2:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+.btn2:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
+}
